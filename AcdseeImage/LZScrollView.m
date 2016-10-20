@@ -33,7 +33,6 @@
 -(instancetype)initWithImgArray:(NSArray *)imgArray{
     self = [super init];
     if (self) {
-        self.backgroundColor = [UIColor blackColor];
         self.LImgArray = imgArray;
         //当前窗口
         _window = [UIApplication sharedApplication].keyWindow;
@@ -128,6 +127,7 @@
         _mainScrollView.minimumZoomScale = 1;
         _mainScrollView.pagingEnabled = YES;
         _mainScrollView.bounces = NO;
+        _mainScrollView.backgroundColor = [UIColor blackColor];
     }
     return _mainScrollView;
     
