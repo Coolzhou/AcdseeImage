@@ -12,7 +12,7 @@
 
 #define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
 #define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
-
+#define VIEWTAG 10
 
 @interface LZScrollView ()<UIScrollViewDelegate>
 
@@ -51,6 +51,7 @@
     
     for (int i=0;i<self.LImgArray.count; i++) {
        ImgScrllView *imgView  = [[ImgScrllView alloc]initWithFrame:CGRectMake((SCREEN_WIDTH +10)*i, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
+        imgView.tag = i+VIEWTAG;
         [imgView setImgViewurlStr:self.LImgArray[i]];
         imgView.Single = ^{
             [UIView animateWithDuration:0.5 animations:^{
@@ -77,6 +78,45 @@
         self.numLable.text = [NSString stringWithFormat:@"%d/%lu",i+1,(unsigned long)self.LImgArray.count];
     }
 }
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+{
+    CGPoint offset = self.mainScrollView.contentOffset;
+    NSInteger page = offset.x / SCREEN_WIDTH ;
+
+    NSLog(@"page = %ld",page);
+
+    if (page != 0) {
+        ImgScrllView *scrollV_next = (ImgScrllView *)[self.mainScrollView viewWithTag:page + VIEWTAG -1]; //前一页
+        if (scrollV_next.zoomScale != 1.0){
+            scrollV_next.zoomScale = 1.0;
+        }
+
+    }
+    if (page != self.LImgArray.count) {
+        ImgScrllView *scollV_pre = (ImgScrllView *)[self.mainScrollView viewWithTag:page+VIEWTAG+1]; //后一页
+        if (scollV_pre.zoomScale != 1.0){
+            scollV_pre.zoomScale = 1.0;
+        }
+    }
+
+    if (page == 0 ) {
+        ImgScrllView *scollV_pre = (ImgScrllView *)[self.mainScrollView viewWithTag:page+VIEWTAG+1]; //后一页
+        if (scollV_pre.zoomScale != 1.0){
+            scollV_pre.zoomScale = 1.0;
+        }
+    }
+
+    if (page == self.LImgArray.count) {
+        ImgScrllView *scrollV_next = (ImgScrllView *)[self.mainScrollView viewWithTag:page +VIEWTAG - 1]; //前一页
+        if (scrollV_next.zoomScale != 1.0){
+
+            scrollV_next.zoomScale = 1.0;
+        }
+    }
+
+}
+
 
 -(UIScrollView *)mainScrollView{
     if (!_mainScrollView) {
