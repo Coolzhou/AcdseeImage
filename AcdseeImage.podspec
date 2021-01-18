@@ -15,7 +15,7 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  spec.name         = "LZImgBrowser"
+  spec.name         = "AcdseeImage"
   spec.version      = "0.0.1"
   spec.summary      = "A short description of LZImgBrowser."
 
@@ -25,7 +25,7 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
-                    this is LZImgBrowser
+                    this is LZImgBrowser LZImgBrowser LZImgBrowser LZImgBrowser LZImgBrowser
                    DESC
 
   spec.homepage     = "https://github.com/Coolzhou/LZImgBrowser"
