@@ -25,10 +25,10 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
-                          这个是一个项目
+                      这个是一个Demo
                    DESC
 
-  spec.homepage     = "https://github.com/Coolzhou/LZImgBrowser"
+  spec.homepage     = "https://github.com/Coolzhou/AcdseeImage"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -53,7 +53,7 @@ Pod::Spec.new do |spec|
   #  profile URL.
   #
 
-  spec.author             = { "lixz" => "ex-lixz@cmfchina.com" }
+  spec.author             = { "lixz" => "coolzhou@163.com" }
   # Or just: spec.author    = "lixz"
   # spec.authors            = { "lixz" => "ex-lixz@cmfchina.com" }
   # spec.social_media_url   = "https://twitter.com/lixz"
@@ -80,7 +80,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/Coolzhou/LZImgBrowser.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/Coolzhou/AcdseeImage.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -91,7 +91,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "AcdseeImage/AcdseeImage/**/*.{h,m}"
+  spec.source_files  = "AcdseeImage/AcdseeImage/*.{h,m}"
   # spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
