@@ -15,7 +15,7 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  spec.name         = "AcdseeImage"
+  spec.name         = "LZImgBrowser"
   spec.version      = "0.0.1"
   spec.summary      = "A short description of LZImgBrowser."
 
@@ -25,6 +25,7 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
+                    this is LZImgBrowser
                    DESC
 
   spec.homepage     = "https://github.com/Coolzhou/LZImgBrowser"
@@ -90,7 +91,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "AcdseeImage", "AcdseeImage/**/*.{h,m}"
+  spec.source_files  = "LZImgBrowser", "AcdseeImage/**/*.{h,m}"
   spec.exclude_files = "AcdseeImage/AcdseeImage"
 
   # spec.public_header_files = "Classes/**/*.h"
