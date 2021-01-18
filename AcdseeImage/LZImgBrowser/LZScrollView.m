@@ -83,7 +83,7 @@
     CGPoint offset = self.mainScrollView.contentOffset;
     NSInteger page = offset.x / SCREEN_WIDTH ;
 
-    NSLog(@"page = %ld",page);
+//    NSLog(@"page = %ld",page);
 
     if (page != 0) {
         ImgScrllView *scrollV_next = (ImgScrllView *)[self.mainScrollView viewWithTag:page + VIEWTAG -1]; //前一页
