@@ -18,8 +18,8 @@
 		42C01765BABBFA59365C30FD /* Pods_AcdseeImageTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4382F8A955971F0A38D209F4 /* Pods_AcdseeImageTests.framework */; };
 		728B35438221648F53EA8C16 /* Pods_AcdseeImage_AcdseeImageUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 239C4BE1D1A75C4E618C9191 /* Pods_AcdseeImage_AcdseeImageUITests.framework */; };
 		A74577FD42484B097A7CBC37 /* Pods_AcdseeImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D3AB407FE0213BBE700FD79 /* Pods_AcdseeImage.framework */; };
-		DB63E99825B8017700D3FD9D /* LZScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB63E99625B8017700D3FD9D /* LZScrollView.m */; };
-		DB63E99925B8017700D3FD9D /* ImgScrllView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB63E99725B8017700D3FD9D /* ImgScrllView.m */; };
+		CB6F7FC125B86823009A5CA1 /* LZScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6F7FBF25B86823009A5CA1 /* LZScrollView.m */; };
+		CB6F7FC225B86823009A5CA1 /* ImgScrllView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6F7FC025B86823009A5CA1 /* ImgScrllView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,11 +64,11 @@
 		8E5FF7B13572FB537F30A1EC /* Pods-AcdseeImageTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AcdseeImageTests.debug.xcconfig"; path = "Target Support Files/Pods-AcdseeImageTests/Pods-AcdseeImageTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B5FF760985C004493264E356 /* Pods-AcdseeImage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AcdseeImage.debug.xcconfig"; path = "Target Support Files/Pods-AcdseeImage/Pods-AcdseeImage.debug.xcconfig"; sourceTree = "<group>"; };
 		BE467ED7E670E8398A824ADE /* Pods-AcdseeImage-AcdseeImageUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AcdseeImage-AcdseeImageUITests.debug.xcconfig"; path = "Target Support Files/Pods-AcdseeImage-AcdseeImageUITests/Pods-AcdseeImage-AcdseeImageUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CB6F7FBD25B86823009A5CA1 /* ImgScrllView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImgScrllView.h; sourceTree = "<group>"; };
+		CB6F7FBE25B86823009A5CA1 /* LZScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZScrollView.h; sourceTree = "<group>"; };
+		CB6F7FBF25B86823009A5CA1 /* LZScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZScrollView.m; sourceTree = "<group>"; };
+		CB6F7FC025B86823009A5CA1 /* ImgScrllView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImgScrllView.m; sourceTree = "<group>"; };
 		DA9E1012B9D985DBEE1AC521 /* Pods-AcdseeImageTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AcdseeImageTests.release.xcconfig"; path = "Target Support Files/Pods-AcdseeImageTests/Pods-AcdseeImageTests.release.xcconfig"; sourceTree = "<group>"; };
-		DB63E99425B8017700D3FD9D /* ImgScrllView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImgScrllView.h; sourceTree = "<group>"; };
-		DB63E99525B8017700D3FD9D /* LZScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZScrollView.h; sourceTree = "<group>"; };
-		DB63E99625B8017700D3FD9D /* LZScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZScrollView.m; sourceTree = "<group>"; };
-		DB63E99725B8017700D3FD9D /* ImgScrllView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImgScrllView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,7 +124,7 @@
 		18C51EE21C9110F400D422E3 /* AcdseeImage */ = {
 			isa = PBXGroup;
 			children = (
-				DB63E99325B8017700D3FD9D /* AcdseeImage */,
+				CB6F7FBC25B86823009A5CA1 /* Core */,
 				18C51EE61C9110F400D422E3 /* AppDelegate.h */,
 				18C51EE71C9110F400D422E3 /* AppDelegate.m */,
 				18C51EE91C9110F400D422E3 /* ViewController.h */,
@@ -187,15 +187,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DB63E99325B8017700D3FD9D /* AcdseeImage */ = {
+		CB6F7FBC25B86823009A5CA1 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				DB63E99425B8017700D3FD9D /* ImgScrllView.h */,
-				DB63E99525B8017700D3FD9D /* LZScrollView.h */,
-				DB63E99625B8017700D3FD9D /* LZScrollView.m */,
-				DB63E99725B8017700D3FD9D /* ImgScrllView.m */,
+				CB6F7FBD25B86823009A5CA1 /* ImgScrllView.h */,
+				CB6F7FBE25B86823009A5CA1 /* LZScrollView.h */,
+				CB6F7FBF25B86823009A5CA1 /* LZScrollView.m */,
+				CB6F7FC025B86823009A5CA1 /* ImgScrllView.m */,
 			);
-			path = AcdseeImage;
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -441,8 +441,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				18C51EEB1C9110F400D422E3 /* ViewController.m in Sources */,
-				DB63E99925B8017700D3FD9D /* ImgScrllView.m in Sources */,
-				DB63E99825B8017700D3FD9D /* LZScrollView.m in Sources */,
+				CB6F7FC225B86823009A5CA1 /* ImgScrllView.m in Sources */,
+				CB6F7FC125B86823009A5CA1 /* LZScrollView.m in Sources */,
 				18C51EE81C9110F400D422E3 /* AppDelegate.m in Sources */,
 				18C51EE51C9110F400D422E3 /* main.m in Sources */,
 			);
