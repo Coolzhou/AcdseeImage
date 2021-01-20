@@ -15,11 +15,11 @@
 		18C51EF31C9110F400D422E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C51EF11C9110F400D422E3 /* LaunchScreen.storyboard */; };
 		18C51EFE1C9110F500D422E3 /* AcdseeImageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C51EFD1C9110F500D422E3 /* AcdseeImageTests.m */; };
 		18C51F091C9110F500D422E3 /* AcdseeImageUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C51F081C9110F500D422E3 /* AcdseeImageUITests.m */; };
-		18C51F581C914C4D00D422E3 /* LZScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C51F571C914C4D00D422E3 /* LZScrollView.m */; };
-		18C51F5B1C9154C900D422E3 /* ImgScrllView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C51F5A1C9154C900D422E3 /* ImgScrllView.m */; };
 		42C01765BABBFA59365C30FD /* Pods_AcdseeImageTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4382F8A955971F0A38D209F4 /* Pods_AcdseeImageTests.framework */; };
 		728B35438221648F53EA8C16 /* Pods_AcdseeImage_AcdseeImageUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 239C4BE1D1A75C4E618C9191 /* Pods_AcdseeImage_AcdseeImageUITests.framework */; };
 		A74577FD42484B097A7CBC37 /* Pods_AcdseeImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D3AB407FE0213BBE700FD79 /* Pods_AcdseeImage.framework */; };
+		DB63E99825B8017700D3FD9D /* LZScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB63E99625B8017700D3FD9D /* LZScrollView.m */; };
+		DB63E99925B8017700D3FD9D /* ImgScrllView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB63E99725B8017700D3FD9D /* ImgScrllView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,10 +57,6 @@
 		18C51F041C9110F500D422E3 /* AcdseeImageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AcdseeImageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18C51F081C9110F500D422E3 /* AcdseeImageUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AcdseeImageUITests.m; sourceTree = "<group>"; };
 		18C51F0A1C9110F500D422E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		18C51F561C914C4D00D422E3 /* LZScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZScrollView.h; sourceTree = "<group>"; };
-		18C51F571C914C4D00D422E3 /* LZScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZScrollView.m; sourceTree = "<group>"; };
-		18C51F591C9154C900D422E3 /* ImgScrllView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImgScrllView.h; sourceTree = "<group>"; };
-		18C51F5A1C9154C900D422E3 /* ImgScrllView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImgScrllView.m; sourceTree = "<group>"; };
 		239C4BE1D1A75C4E618C9191 /* Pods_AcdseeImage_AcdseeImageUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AcdseeImage_AcdseeImageUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D3AB407FE0213BBE700FD79 /* Pods_AcdseeImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AcdseeImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4382F8A955971F0A38D209F4 /* Pods_AcdseeImageTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AcdseeImageTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +65,10 @@
 		B5FF760985C004493264E356 /* Pods-AcdseeImage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AcdseeImage.debug.xcconfig"; path = "Target Support Files/Pods-AcdseeImage/Pods-AcdseeImage.debug.xcconfig"; sourceTree = "<group>"; };
 		BE467ED7E670E8398A824ADE /* Pods-AcdseeImage-AcdseeImageUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AcdseeImage-AcdseeImageUITests.debug.xcconfig"; path = "Target Support Files/Pods-AcdseeImage-AcdseeImageUITests/Pods-AcdseeImage-AcdseeImageUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DA9E1012B9D985DBEE1AC521 /* Pods-AcdseeImageTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AcdseeImageTests.release.xcconfig"; path = "Target Support Files/Pods-AcdseeImageTests/Pods-AcdseeImageTests.release.xcconfig"; sourceTree = "<group>"; };
+		DB63E99425B8017700D3FD9D /* ImgScrllView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImgScrllView.h; sourceTree = "<group>"; };
+		DB63E99525B8017700D3FD9D /* LZScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZScrollView.h; sourceTree = "<group>"; };
+		DB63E99625B8017700D3FD9D /* LZScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZScrollView.m; sourceTree = "<group>"; };
+		DB63E99725B8017700D3FD9D /* ImgScrllView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImgScrllView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,7 +124,7 @@
 		18C51EE21C9110F400D422E3 /* AcdseeImage */ = {
 			isa = PBXGroup;
 			children = (
-				18C51F551C914C0C00D422E3 /* LZImgBrowser */,
+				DB63E99325B8017700D3FD9D /* AcdseeImage */,
 				18C51EE61C9110F400D422E3 /* AppDelegate.h */,
 				18C51EE71C9110F400D422E3 /* AppDelegate.m */,
 				18C51EE91C9110F400D422E3 /* ViewController.h */,
@@ -164,17 +164,6 @@
 			path = AcdseeImageUITests;
 			sourceTree = "<group>";
 		};
-		18C51F551C914C0C00D422E3 /* LZImgBrowser */ = {
-			isa = PBXGroup;
-			children = (
-				18C51F561C914C4D00D422E3 /* LZScrollView.h */,
-				18C51F571C914C4D00D422E3 /* LZScrollView.m */,
-				18C51F591C9154C900D422E3 /* ImgScrllView.h */,
-				18C51F5A1C9154C900D422E3 /* ImgScrllView.m */,
-			);
-			path = LZImgBrowser;
-			sourceTree = "<group>";
-		};
 		512A463B74F30C501EFDF4B5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -196,6 +185,17 @@
 				4382F8A955971F0A38D209F4 /* Pods_AcdseeImageTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DB63E99325B8017700D3FD9D /* AcdseeImage */ = {
+			isa = PBXGroup;
+			children = (
+				DB63E99425B8017700D3FD9D /* ImgScrllView.h */,
+				DB63E99525B8017700D3FD9D /* LZScrollView.h */,
+				DB63E99625B8017700D3FD9D /* LZScrollView.m */,
+				DB63E99725B8017700D3FD9D /* ImgScrllView.m */,
+			);
+			path = AcdseeImage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -441,9 +441,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				18C51EEB1C9110F400D422E3 /* ViewController.m in Sources */,
-				18C51F5B1C9154C900D422E3 /* ImgScrllView.m in Sources */,
+				DB63E99925B8017700D3FD9D /* ImgScrllView.m in Sources */,
+				DB63E99825B8017700D3FD9D /* LZScrollView.m in Sources */,
 				18C51EE81C9110F400D422E3 /* AppDelegate.m in Sources */,
-				18C51F581C914C4D00D422E3 /* LZScrollView.m in Sources */,
 				18C51EE51C9110F400D422E3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
